@@ -2,6 +2,7 @@
 #You will need Google Chrome or Brave  for this to work. Because we need to log console output using a launch flag, and we can use this to pull our Roblox Launch Arugment.
 #There is no need to sign into Chrome if you don't want to.
 #After selecting a game, the browser will close. Logging will not be enabled for future general Chrome sessions - it only gets enabled in Roblox Linux Launcher.
+#!/usr/bin/env python3
 import os
 import time
 import threading
