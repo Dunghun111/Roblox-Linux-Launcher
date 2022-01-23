@@ -161,7 +161,10 @@ if os.path.isdir(wineprefix) == False:
     logging.critical("WINE does not exist: " + wineprefix)
     quit()
 
-versions_folder = f"{wineprefix}/drive_c/Program Files (x86)/Roblox/Versions"
+
+USER = os.path.expanduser('~')
+USER = USER.replace('/home/','')
+versions_folder = f"{wineprefix}/drive_c/users/{USER}/AppData/Local/Roblox/Versions"
 if os.path.isdir(versions_folder) == False:
     logging.critical("Roblox is not installed: " + versions_folder)
     quit()
